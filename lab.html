@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Laboratory Services - Skies Care Hospital</title>
+</head>
+<body background="lab_background.jpeg" text="black">
+
+<center>
+    <h1>Laboratory Test Request Form</h1>
+    <p>Fill in the form to request a lab test.</p>
+</center>
+
+<form>
+    <table border="0" cellpadding="6" cellspacing="0" align="center">
+        <tr>
+            <td>Patient Name:</td>
+            <td><input type="text" name="patient_name" required></td>
+        </tr>
+        <tr>
+            <td>Contact Number:</td>
+            <td><input type="tel" name="phone" required></td>
+        </tr>
+        <tr>
+            <td>Test Type:</td>
+            <td>
+                <select name="test_type" required>
+                    <option value="">-- Select Test --</option>
+                    <option value="blood">Blood Test</option>
+                    <option value="urine">Urine Test</option>
+                    <option value="xray">X-Ray</option>
+                    <option value="mri">MRI</option>
+                    <option value="other">Other</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Preferred Date:</td>
+            <td><input type="date" name="date" required></td>
+        </tr>
+        <tr>
+            <td>Preferred Time:</td>
+            <td><input type="time" name="time" required></td>
+        </tr>
+        <tr>
+            <td>Fasting Required:</td>
+            <td>
+                <input type="radio" name="fasting" value="yes"> Yes
+                <input type="radio" name="fasting" value="no"> No
+            </td>
+        </tr>
+        <tr>
+            <td>Notes for Lab:</td>
+            <td><textarea name="notes" rows="4" cols="30"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Submit Lab Request">
+            </td>
+        </tr>
+    </table>
+</form>
+
+<center>
+    <br>
+    <a href="Departments.html"><font color="blue">Back to Services</font></a>
+</center>
+
+</body>
+</html>
+

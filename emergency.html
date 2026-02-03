@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emergency Care - Skies Care Hospital</title>
+</head>
+<body bgcolor="grey">
+
+<center>
+    <h1>Emergency Care Form</h1>
+    <p>Please fill in the details below for emergency assistance.</p>
+</center>
+
+<form>
+    <table border="0" cellpadding="6" cellspacing="0" align="center">
+        <tr>
+            <td>Patient Name:</td>
+            <td><input type="text" name="patient_name" required></td>
+        </tr>
+        <tr>
+            <td>Contact Number:</td>
+            <td><input type="tel" name="phone" required></td>
+        </tr>
+        <tr>
+            <td>Type of Emergency:</td>
+            <td>
+                <select name="emergency_type" required>
+                    <option value="">-- Select --</option>
+                    <option value="accident">Accident</option>
+                    <option value="heart">Chest Pain / Heart Problem</option>
+                    <option value="breathing">Breathing Difficulty</option>
+                    <option value="injury">Severe Injury</option>
+                    <option value="other">Other</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Current Location:</td>
+            <td><input type="text" name="location" required></td>
+        </tr>
+        <tr>
+            <td>Additional Details:</td>
+            <td><textarea name="details" rows="4" cols="30"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Request Emergency Help">
+            </td>
+        </tr>
+    </table>
+</form>
+
+<center>
+    <br>
+    <a href="Departments.html"><font color="yellow">Back to Services</font></a>
+</center>
+
+</body>
+</html>

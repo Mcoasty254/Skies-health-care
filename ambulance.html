@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ambulance Service - Skies Care Hospital</title>
+</head>
+<body >
+
+<center>
+    <h1>Ambulance Request Form</h1>
+    <p>Provide the details below to request an ambulance.</p>
+</center>
+
+<form>
+    <table border="0" cellpadding="6" cellspacing="0" align="center">
+        <tr>
+            <td>Patient Name:</td>
+            <td><input type="text" name="patient_name" required></td>
+        </tr>
+        <tr>
+            <td>Contact Number:</td>
+            <td><input type="tel" name="phone" required></td>
+        </tr>
+        <tr>
+            <td>Pickup Address:</td>
+            <td><input type="text" name="address" required></td>
+        </tr>
+        <tr>
+            <td>Landmark:</td>
+            <td><input type="text" name="landmark"></td>
+        </tr>
+        <tr>
+            <td>Preferred Pickup Time:</td>
+            <td><input type="time" name="time" required></td>
+        </tr>
+        <tr>
+            <td>Type of Case:</td>
+            <td>
+                <select name="case_type" required>
+                    <option value="">-- Select --</option>
+                    <option value="emergency">Emergency</option>
+                    <option value="non_emergency">Non-Emergency Transport</option>
+                    <option value="transfer">Hospital Transfer</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Additional Details:</td>
+            <td><textarea name="details" rows="4" cols="30"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Request Ambulance">
+            </td>
+        </tr>
+    </table>
+</form>
+
+<center>
+    <br>
+    <a href="Departments.html"><font color="yellow">Back to Services</font></a>
+</center>
+
+</body>
+</html>
+

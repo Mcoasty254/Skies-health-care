@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skies Care Hospital - Checkup Booking</title>
+</head>
+<body bgcolor="#f4f7fb">
+    <center>
+        <h1>Checkup Booking Form</h1>
+    </center>
+
+    <form>
+        <table border="0" cellpadding="6" cellspacing="0" align="center">
+            <tr>
+                <td>Full Name:</td>
+                <td><input type="text" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="tel" name="phone" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Preferred Date:</td>
+                <td><input type="date" name="date" required></td>
+            </tr>
+            <tr>
+                <td>Preferred Time:</td>
+                <td><input type="time" name="time" required></td>
+            </tr>
+            <tr>
+                <td>Department:</td>
+                <td>
+                    <select name="department" required>
+                        <option value="">-- Select Department --</option>
+                        <option value="general">General Checkup</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="neurology">Neurology</option>
+                        <option value="pediatrics">Pediatrics</option>
+                        <option value="orthopedics">Orthopedics</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Symptoms / Reason for visit:</td>
+                <td><textarea name="symptoms" rows="4" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Book Checkup">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <center>
+        <br>
+        <a href="Skies health care.html">Back to Home</a>
+    </center>
+</body>
+</html>

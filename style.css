@@ -1,0 +1,240 @@
+/* =========================
+   Skies Health Care - Global Styles
+   ========================= */
+
+:root{
+  --brand: #0b6e99;
+  --brand-dark: #084a66;
+  --bg: #f6fbff;
+  --card: rgba(255,255,255,0.92);
+  --text: #0f172a;
+  --muted: #475569;
+  --border: rgba(15,23,42,0.12);
+  --shadow: 0 14px 34px rgba(2,8,23,0.14);
+  --radius: 18px;
+}
+
+*{ box-sizing: border-box; }
+html, body{ height: 100%; }
+
+body{
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.65;
+  background:
+    radial-gradient(1100px 600px at 15% 10%, rgba(11,110,153,0.16), transparent 60%),
+    radial-gradient(900px 500px at 85% 0%, rgba(255,140,0,0.14), transparent 60%),
+    var(--bg);
+  padding: 22px;
+}
+
+/* Optional: image background (used on home page) */
+body.has-bg{
+  background-image:
+    linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+    url("background image.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Make <center> behave like a layout container */
+center{
+  display: block;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Header + logo */
+header{
+  display: flex;
+  justify-content: center;
+  margin: 6px 0 14px;
+}
+
+header img{
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 999px;
+  border: 4px solid rgba(255,255,255,0.9);
+  box-shadow: 0 12px 26px rgba(2,8,23,0.18);
+}
+
+/* Headings */
+h1{
+  margin: 8px 0 4px;
+  font-size: clamp(1.6rem, 3.4vw, 2.6rem);
+  letter-spacing: 0.2px;
+}
+
+h2{
+  margin: 18px auto 10px;
+  max-width: 980px;
+  font-size: 1.25rem;
+  color: var(--brand-dark);
+}
+
+h3{
+  margin: 0 auto 14px;
+  max-width: 980px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+/* Make old <font> tags less important */
+font{ color: inherit; }
+
+/* Sections + text */
+p, ul, ol{
+  max-width: 980px;
+  margin: 10px auto;
+}
+
+p{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  box-shadow: 0 10px 24px rgba(2,8,23,0.08);
+  color: var(--text);
+}
+
+/* Lists */
+ul, ol{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 18px 14px 36px;
+  box-shadow: 0 10px 24px rgba(2,8,23,0.08);
+}
+
+/* Divider */
+hr{
+  border: none;
+  height: 1px;
+  background: rgba(15,23,42,0.12);
+  max-width: 980px;
+  margin: 18px auto;
+}
+
+/* Links */
+a{
+  color: var(--brand-dark);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a:hover{ text-decoration: underline; }
+
+/* Links in <center> become button-like */
+a.btn,
+center a{
+  display: inline-block;
+  background: var(--brand);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 12px 24px rgba(2,8,23,0.12);
+  text-decoration: none;
+}
+
+center a:hover{ filter: brightness(0.95); }
+
+/* Audio + video */
+audio{
+  display: block;
+  width: min(560px, 100%);
+  margin: 10px auto 0;
+}
+
+video{
+  display: block;
+  width: min(980px, 100%);
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  background: #000;
+  margin: 10px auto;
+}
+
+/* Tables */
+table{
+  width: min(980px, 100%);
+  margin: 12px auto;
+  border-collapse: collapse;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(2,8,23,0.08);
+}
+
+th, td{
+  padding: 12px 12px;
+  border-bottom: 1px solid rgba(15,23,42,0.08);
+  text-align: left;
+  vertical-align: top;
+}
+
+th{
+  background: rgba(11,110,153,0.10);
+  color: var(--text);
+}
+
+tr:last-child td{ border-bottom: none; }
+
+/* Forms */
+form{
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+input, select, textarea{
+  width: 100%;
+  padding: 10px 10px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.96);
+  color: var(--text);
+  font: inherit;
+}
+
+textarea{ resize: vertical; }
+
+input[type="submit"], button{
+  width: auto;
+  background: var(--brand);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 12px 24px rgba(2,8,23,0.12);
+}
+
+input[type="submit"]:hover, button:hover{
+  filter: brightness(0.95);
+}
+
+/* Improve readability when using the photo background */
+body.has-bg p,
+body.has-bg table,
+body.has-bg th,
+body.has-bg td{
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.65);
+}
+
+/* Mobile tweaks */
+@media (max-width: 640px){
+  body{ padding: 14px; }
+  th, td{ padding: 10px; }
+  header img{ width: 96px; height: 96px; }
+}
